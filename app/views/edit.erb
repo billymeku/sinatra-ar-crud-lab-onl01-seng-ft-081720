@@ -1,6 +1,20 @@
+<<<<<<< HEAD
 <form method="POST" action="/articles/<%= @article.id %>">
         <input id="hidden" type="hidden" name="_method" value="patch">
         <label>Article Title: <input type="text" name="title" value= <%= @article.title%>> </label>
         <label>Article Content: <input type="text" name="content" value= <%= @article.content%>>></label>
         <input type="submit" value="Submit">
     </form>
+=======
+<form method="POST" action="/aricles/<%= @aricle.id %>">
+    <input type="hidden" id="hidden" name="_method" value="PATCH">
+        <% @users.each do | user |%>
+        <%= user.id %>"><%= user.username %>
+        <% end %>
+
+    Title: <input type="text" name="title"><br />
+    Content: <input type name="body"><br />
+    <input type="submit">
+    
+  </form>
+>>>>>>> 6812cb991d1fc107f74ac97bd4724e1c005069a0
